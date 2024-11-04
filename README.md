@@ -139,47 +139,44 @@ The Todo List Application is a simple yet powerful API-driven application design
    ```bash
    git clone https://github.com/DahunsiJ/todo_api.git
 
-Navigate to the project directory:
+2. **Navigate to the project directory**:
 
-bash
-Copy code
-cd todo-list-app
-Install dependencies:
+   ```bash
+    cd todo_api
+3. **Install dependencies**:
 
-bash
-Copy code
-composer install
-Configure your environment: Copy the .env.example file to .env and update the database and application settings.
+   ```bash
+    composer install
+4. **Configure your environment: Copy the .env.example file to .env and update the database and application settings.**
 
-Generate the application key:
+5. **Generate the application key**:
 
-bash
-Copy code
-php artisan key:generate
-Run migrations:
+   ```bash
+    php artisan key:generate
+6. **Run migrations**:
 
-bash
-Copy code
-php artisan migrate
-Start the development server:
+   ```bash
+    php artisan migrate
+7. **Start the development server**:
 
-bash
-Copy code
-php artisan serve
-Documentation
+   ```bash
+    php artisan serve
+
+## Documentation
 API documentation is available at /api/documentation. It provides detailed information about each endpoint, including request and response formats.
 
-Unit Testing
+## Unit Testing
 To ensure functionality and reliability, unit tests have been implemented for all major API endpoints:
 
-Authentication endpoints (register, login, logout)
-CRUD operations on tasks (create, retrieve, update, delete)
-Run tests using:
+1. Authentication endpoints (register, login, logout)
+2. CRUD operations on tasks (create, retrieve, update, delete)
 
-bash
-Copy code
-php artisan test
+1. **Run tests using**:
+
+   ```bash
+    php artisan test
+
 The test suite covers expected behaviors, including successful operations and error handling for invalid requests.
 
-Error Handling
+## Error Handling
 Robust error handling has been implemented to provide meaningful error messages with appropriate HTTP status codes. Validation errors return 400 Bad Request with specific error messages, unauthorized access returns 401 Unauthorized, and requests for non-existent resources return 404 Not Found.
