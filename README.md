@@ -138,3 +138,48 @@ The Todo List Application is a simple yet powerful API-driven application design
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/DahunsiJ/todo_api.git
+
+Navigate to the project directory:
+
+bash
+Copy code
+cd todo-list-app
+Install dependencies:
+
+bash
+Copy code
+composer install
+Configure your environment: Copy the .env.example file to .env and update the database and application settings.
+
+Generate the application key:
+
+bash
+Copy code
+php artisan key:generate
+Run migrations:
+
+bash
+Copy code
+php artisan migrate
+Start the development server:
+
+bash
+Copy code
+php artisan serve
+Documentation
+API documentation is available at /api/documentation. It provides detailed information about each endpoint, including request and response formats.
+
+Unit Testing
+To ensure functionality and reliability, unit tests have been implemented for all major API endpoints:
+
+Authentication endpoints (register, login, logout)
+CRUD operations on tasks (create, retrieve, update, delete)
+Run tests using:
+
+bash
+Copy code
+php artisan test
+The test suite covers expected behaviors, including successful operations and error handling for invalid requests.
+
+Error Handling
+Robust error handling has been implemented to provide meaningful error messages with appropriate HTTP status codes. Validation errors return 400 Bad Request with specific error messages, unauthorized access returns 401 Unauthorized, and requests for non-existent resources return 404 Not Found.
